@@ -16,8 +16,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
         -->
-    <script src="./uv/uv.bundle.js"></script>
-    <script src="./uv/uv.config.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
     <style>
         @font-face {
             font-family: 'Roboto';
@@ -86,7 +86,7 @@
     </div>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./uv.sw-handler.js', { scope: __uv$config.prefix }).then(() => {
+            navigator.serviceWorker.register('/uv.sw-handler.js', { scope: __uv$config.prefix }).then(() => {
                 let url = atob(decodeURIComponent(window.location.hash.slice(1)));
                 let search;
                 switch (localStorage.getItem('incog||search')) {
