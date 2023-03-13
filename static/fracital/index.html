@@ -8,8 +8,8 @@
   <script src="/uv/uv.config.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js', {
-          scope: '/sw/',
+      navigator.serviceWorker.register('/uv.sw-handler.js', {
+          scope: '/service/',
       });
     };
   </script>
