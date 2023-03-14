@@ -1,11 +1,9 @@
 importScripts('/uv/uv.bundle.js');
 importScripts('/uv/uv.config.js');
-importScripts("/uv/uv.sw.js");
-importScripts("./nebula/osana/osana.worker.js");
+importScripts(__uv$config.sw || '/uv/uv.sw.js');
+
 const sw = new UVServiceWorker();
 
-
-self.addEventListener("fetch", (event) => {
-    if (event.request.url.startsWith(location.origin + "/service/"))
-      event.respondWith(UV.fetch(event));
+self.addEventListener('fetch', event => {
+    event.respondWith(sw.fetch(event))
 });
