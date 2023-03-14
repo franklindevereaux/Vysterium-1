@@ -4,7 +4,7 @@ const urlParams = new URLSearchParams(window.location.search);
 if (urlParams.get("url") != null) {
   makeloader()
   document.getElementsByTagName("input")[0].value = urlParams.get("url");
-  window.navigator.serviceWorker.register('./uv.sw-handler.js', {
+  window.navigator.serviceWorker.register('/uv.sw-handler.js', {
     scope: __uv$config.prefix
   }).then(() => {
     let url = input.value.trim();
