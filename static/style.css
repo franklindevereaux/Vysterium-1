@@ -79,3 +79,38 @@ body {
   padding: 10px;
   margin: 0;
 }
+.searchbox {
+  position: fixed;
+  top: calc(50% + 90px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 25px;
+  border: 2px solid #363636;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.searchbox input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.searchbox button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.searchbox button:hover {
+  filter: brightness(1.1);
+}
