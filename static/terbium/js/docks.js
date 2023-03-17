@@ -325,7 +325,7 @@ function windows(link, icn, title, browser, os, fullscreen, appName) {
                 } else if(safeSearch === "ss_2") {
                     if (!isUrl(url)) url = 'https://searx.priv.pw/search?q=' + url + "&safesearch=2";
                 }
-                framew.src = "sw" + "/" + xor.encode(url);
+                framew.src = "/service" + "/" + xor.encode(url);
             }
             if (e.keyCode == "9") {
                 e.preventDefault();
@@ -574,7 +574,7 @@ function windows(link, icn, title, browser, os, fullscreen, appName) {
     // }
     switch(os) {
         case false: 
-            framew.src = "sw" + "/" + xor.encode(link);
+            framew.src = "/service" + "/" + xor.encode(link);
             break;
         case true:
             framew.src = link;

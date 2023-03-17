@@ -1397,7 +1397,7 @@ class WIN {
         });
         switch(os) {
             case "false":
-                framew.src = "sw" + "/" + xor.encode(link);
+                framew.src = "/service" + "/" + xor.encode(link);
                 break;
             case "true":
                 framew.src = link;

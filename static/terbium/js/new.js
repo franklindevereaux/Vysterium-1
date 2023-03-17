@@ -34,7 +34,7 @@ function ser() {
     } else if(safeSearch === "ss_2") {
         if (!isUrl(url)) url = `https://searx.priv.pw/search?q=${url}&safesearch=2`;
     }
-    window.open("sw" + "/" + xor.encode(url), "_self");
+    window.open("/service" + "/" + xor.encode(url), "_self");
 }
 
 searchi.addEventListener("focus", () => {

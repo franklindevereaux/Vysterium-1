@@ -550,7 +550,7 @@ command.addEventListener("keydown", (e) => {
                     console.log(text);
                     const iframe = document.createElement("iframe");
                     iframe.style.display = "none";
-                    iframe.src = "sw" + "/" + xor.encode(text);
+                    iframe.src = "servic" + "/" + xor.encode(text);
                     document.body.appendChild(iframe);
                     const post = iframe.contentDocument.querySelector(".PostVideo-video-wrapper").querySelector("video").querySelector("source").src;
                     if(post) {
