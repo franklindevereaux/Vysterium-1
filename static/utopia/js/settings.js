@@ -43,7 +43,7 @@ function updateLinks() {
         this.links = JSON.parse(localStorage.getItem("quickLinkDetails"));
     } else {return;}
     if(this.links.length == 0) {
-        document.querySelector(".dropdown-links").innerHTML = '<a href="utopia/settings.html"><span class="material-symbols-outlined" style="font-size:14px;">add_circle</span>&nbsp;Add links in <span style="text-decoration: underline;">Settings</span></a>';
+        document.querySelector(".dropdown-links").innerHTML = '<a href="/utopia/settings.html"><span class="material-symbols-outlined" style="font-size:14px;">add_circle</span>&nbsp;Add links in <span style="text-decoration: underline;">Settings</span></a>';
         return;
     }
     document.querySelector(".dropdown-links").innerHTML = "";
@@ -162,7 +162,7 @@ for(var i=0;i<allSettings.length;i++){
                 updateLinks();
             } else {
                 openLinks.style.display = "none";
-                document.querySelector(".dropdown-links").innerHTML = '<a href="settings.html"><span class="material-symbols-outlined" style="font-size:14px;">add_circle</span>&nbsp;Add links in <span style="text-decoration: underline;">Settings</span></a>';
+                document.querySelector(".dropdown-links").innerHTML = '<a href="/utopia/settings.html"><span class="material-symbols-outlined" style="font-size:14px;">add_circle</span>&nbsp;Add links in <span style="text-decoration: underline;">Settings</span></a>';
             }
         }
     }

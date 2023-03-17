@@ -67,7 +67,7 @@ function updateLinks() {
       this.newFrame.style.display = "none";
       this.newFrame.src = "go.html";
       document.body.appendChild(this.newFrame);*/
-      window.navigator.serviceWorker.register('/sw.js', {
+      window.navigator.serviceWorker.register('/uv.sw-handler.js', {
         scope: __uv$config.prefix
       }).then(() => {
         console.log("Service worker (for Quick Links) registered.");

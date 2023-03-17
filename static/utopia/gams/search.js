@@ -53,7 +53,7 @@ for(var i=0;i<gams.length;i++){
     if(!this.id) {
       window.location.href = "./gams.html#" + this.pathname;
     } else {
-      window.navigator.serviceWorker.register('/sw.js', {
+      window.navigator.serviceWorker.register('/uv.sw-handler.js', {
         scope: __uv$config.prefix
       }).then(() => {
         if(!this.id.startsWith("http")){

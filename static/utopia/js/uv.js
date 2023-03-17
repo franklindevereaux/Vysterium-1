@@ -9,7 +9,7 @@ function openUV(url){
   uv.src = "https://u." + (wlh.startsWith("www") ? wlh.substring(4) : wlh) + "?open=" + encodeUrl(url);
   uv.style.display = "none";
   document.body.appendChild(uv);*/
-  window.navigator.serviceWorker.register('/sw.js', {
+  window.navigator.serviceWorker.register('/uv.sw-handler.js', {
     scope: __uv$config.prefix
   }).then(() => {
     window.location.href = __uv$config.prefix + encodeUrl(url);

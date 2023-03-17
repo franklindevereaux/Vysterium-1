@@ -102,7 +102,7 @@ let observer = new MutationObserver(mutations => {
   mutations.forEach(mutation => {
     if (mutation.type == "attributes") {
 	if(!document.getElementById("urlbar").src == "") {
-      document.getElementById("urlbar").src=xor.decode(document.getElementById("frame").contentWindow.location.href.split('/sw/')[1]);
+      document.getElementById("urlbar").src=xor.decode(document.getElementById("frame").contentWindow.location.href.split('/service/')[1]);
     }
    };
   });

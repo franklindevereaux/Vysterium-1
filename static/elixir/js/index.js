@@ -141,7 +141,7 @@ if(localStorage.getItem('analytics') != 'off') {
     // arc
     var scriptTagARC = document.createElement('script');
     scriptTagARC.setAttribute('async', '');
-    scriptTagARC.setAttribute('src', 'https://arc.io/widget.min.js#85sFzH5m');
+
     document.head.appendChild(scriptTagARC);
 }
 
