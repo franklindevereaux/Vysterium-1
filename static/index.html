@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Vysterium</title>
+<link rel="icon" href="./favicon.png" type="image/x-icon">
   <link href="./style.css" rel="stylesheet" type="text/css" />
 </head>
     <script src="/uv/uv.bundle.js"></script>
@@ -40,25 +41,24 @@
         <a href="#"><img src="icons/prx/generalmath.svg"          onclick="location.href = './generalmath/index.html'"></a>
       </div>
     </div>
-    <div class="searchbox">
+    <div class="searchbox" id="searchbox">
     <form id="uv-form" class="flex-center">
       <input
         id="uv-search-engine"
         value="https://www.google.com/search?q=%s"
         type="hidden"
       />
-      <input id="uv-address" type="text" placeholder="Search the web freely" />
+      <input id="uv-address" type="text" placeholder="Quick Search" />
     </form>
   </div>
-  </center>
   <script>
-  const dropdown = document.querySelector(".dropdown");
-  const content = dropdown.querySelector(".dropdown-content");
-
-  dropdown.addEventListener("click", function() {
-    content.classList.toggle("show");
-  });
-</script>
+    var searchBox = document.getElementById("searchbox")
+    searchBox.classList.toggle("show");
+  </script>
+  </center>
+<div class="footer">
+  <p>Join <a href="https://discord.gg/vysterium">Vysterium Network</a> for more links!</p>
+</div>
 
 </body>
 
